@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="input" >nhap ten ngoi sao
+<button onclick="check()">check</button>
+<script>
+  let names = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe và Regulus'];
+  let ageStars = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major và Leo'];
+  function findName(str){
+      let name = document.getElementById('input').value;
+      let index  = 0;
+      if(str.indexOf(name) >= 0){
+          index = str.indexOf(name);
+          alert(ageStars[index]);
+      }else alert('Ko co trong ham');
+
+  }
+  function check(){
+      findName(names);
+  }
+
+
+
+</script>
+</body>
+</html>

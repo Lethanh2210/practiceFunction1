@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="input">
+<button onclick="changeValue(a)">Increase</button>
+<div id="1"></div>
+</body>
+<script>
+    let a = 0;
+  function changeValue(b){
+      b = getValue() ;
+      document.getElementById('input').value = b;
+  }
+  function getValue(){
+      a = +document.getElementById('input').value;
+      return a+1;
+  }
+    ;
+
+
+</script>
+</html>
